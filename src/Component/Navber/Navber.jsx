@@ -65,11 +65,11 @@ const Navber = () => {
 
                                         </div>
                                     </label>
-                                    <button onClick={handleSignOut} className="btn font-semibold bg-[#DCF2CC] hover:bg-blue-300 text-base">Log Out</button>
+                                    <button onClick={handleSignOut} className="btn font-semibold bg-[#FF6F61] text-white hover:bg-blue-300 text-base">Log Out</button>
                                 </div>
                                 :
 
-                                <NavLink to="/login" className="btn font-semibold hover:bg-blue-300 bg-[#DCF2CC] text-base">Login</NavLink>
+                                <NavLink to="/login" className="btn font-semibold hover:bg-blue-300 bg-[#FF6F61] text-white text-base">Login</NavLink>
                         }      
         </div>
       </div>
