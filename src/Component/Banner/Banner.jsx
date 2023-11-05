@@ -26,7 +26,9 @@ const Banner = () => {
             >
                 <SwiperSlide>
                     <div className='lg:flex justify-center items-center space-x-5 bg-[#DCF2CC] h-[500px]'>
-                        <div className='lg:w-1/2  ml-16'>
+                        <div className='lg:w-1/2  ml-16' data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                             <h1 className='text-6xl tracking-widest font-extrabold text-blue-400'>Online Group Study </h1>
                             <p className='text-xl mt-4'>Boost your productivity and learning with our Online Group Study Sessions. Join us for structured study, interactive discussions, and peer support. Let's excel together!</p>
                             <button type="button" className="text-white mt-4 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">READ MORE</button>
@@ -38,7 +40,9 @@ const Banner = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='lg:flex justify-center items-center space-x-5 bg-[#DCF2CC] h-[500px]'>
-                        <div className='lg:w-1/2  ml-16'>
+                        <div className='lg:w-1/2  ml-16' data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                             <h1 className='text-6xl tracking-widest font-extrabold text-blue-400'>Online Group Study </h1>
                             <p className='text-xl mt-4'>Boost your productivity and learning with our Online Group Study Sessions. Join us for structured study, interactive discussions, and peer support. Let's excel together!</p>
                             <button type="button" className="text-white mt-4 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">READ MORE</button>
@@ -50,7 +54,9 @@ const Banner = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='lg:flex justify-center items-center space-x-5 bg-[#DCF2CC] h-[500px]'>
-                        <div className='lg:w-1/2  ml-16'>
+                        <div className='lg:w-1/2  ml-16' data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                             <h1 className='text-6xl tracking-widest font-extrabold text-blue-400'>Online Group Study </h1>
                             <p className='text-xl mt-4'>Boost your productivity and learning with our Online Group Study Sessions. Join us for structured study, interactive discussions, and peer support. Let's excel together!</p>
                             <button type="button" className="text-white mt-4 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">READ MORE</button>
@@ -62,7 +68,7 @@ const Banner = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='lg:flex justify-center items-center space-x-5 bg-[#DCF2CC] h-[500px]'>
-                        <div className='lg:w-1/2  ml-16'>
+                        <div className='lg:w-1/2  ml-16' >
                             <h1 className='text-6xl tracking-widest font-extrabold text-blue-400'>Online Group Study </h1>
                             <p className='text-xl mt-4'>Boost your productivity and learning with our Online Group Study Sessions. Join us for structured study, interactive discussions, and peer support. Let's excel together!</p>
                             <button type="button" className="text-white mt-4 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">READ MORE</button>
