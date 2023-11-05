@@ -2,6 +2,7 @@ import { useState } from "react";
 import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
+import Swal from "sweetalert2";
 
 const CreateAssignment = () => {
     const [startDate, setStartDate] = useState(new Date());
@@ -18,26 +19,26 @@ const CreateAssignment = () => {
       const newUser = { title, level, marks, date, description, photo }
      console.log(newUser)
 
-    //   console.log(newUser)
-    //   fetch('https://e-commerce-project-server-smoky.vercel.app/cards', {
-    //      method: 'POST',
-    //      headers: {
-    //         'content-type': 'application/json'
-    //      },
-    //      body: JSON.stringify(newUser)
-    //   })
-    //      .then(res => res.json())
-    //      .then(data => {
-    //         console.log(data)
-    //         if (data.insertedId) {
-    //            Swal.fire({
-    //               title: 'success',
-    //               text: 'Add product successfully',
-    //               icon: 'success',
-    //               confirmButtonText: 'Done'
-    //            })
-    //         }
-    //      })
+
+      fetch('http://localhost:5000/assignments', {
+         method: 'POST',
+         headers: {
+            'content-type': 'application/json'
+         },
+         body: JSON.stringify(newUser)
+      })
+         .then(res => res.json())
+         .then(data => {
+            console.log(data)
+            if (data.insertedId) {
+               Swal.fire({
+                  title: 'success',
+                  text: 'Assignment added successfully',
+                  icon: 'success',
+                  confirmButtonText: 'Done'
+               })
+            }
+         })
     }
     return (
         <div>
