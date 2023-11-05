@@ -5,7 +5,7 @@ import FaqQuestion from "../../Component/FaqQuestion/FaqQuestion";
 
 const Home = () => {
     return (
-        <div className="mt-5 pb-12">
+        <div className="mt-5 pb-12 ">
           <Banner></Banner>
           <CardFeature></CardFeature>
           <FaqQuestion></FaqQuestion>

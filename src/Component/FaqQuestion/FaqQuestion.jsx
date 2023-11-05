@@ -1,8 +1,12 @@
+import WorkExperience from "../WorkExperience/WorkExperience";
 
 
 const FaqQuestion = () => {
     return (
-        <div className="bg-gray-950 h-[700px] text-center pt-10 mt-20">
+        <div className="bg-gray-950 text-center pt-10 pb-12 mt-20">
+
+            <WorkExperience></WorkExperience>
+
             <div>
                 <h2 className="text-2xl font-bold text-[#70B641]">HAVE A QUESTION?</h2>
                 <h1 className="text-5xl font-extrabold mt-3 text-white">Frequently Asked Questions</h1>
