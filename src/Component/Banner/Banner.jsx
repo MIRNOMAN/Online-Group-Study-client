@@ -4,6 +4,7 @@ import banner1 from "../../assets/images/onlineClass1.png"
 import banner2 from "../../assets/images/onlineClass2.png"
 import banner3 from "../../assets/images/onlineClass3.png"
 import banner4 from "../../assets/images/onlineClass4.png"
+import bannerAnimation from "../../assets/cover1.json"
 
 // Import Swiper styles
 import 'swiper/css';
@@ -35,6 +36,7 @@ const Banner = () => {
                         </div>
                         <div className='lg:w-1/2'>
                             <img src={banner1} alt="" />
+                            {/* <Lottie className="h-screen" animationData={bannerAnimation}></Lottie> */}
                         </div>
                     </div>
                 </SwiperSlide>

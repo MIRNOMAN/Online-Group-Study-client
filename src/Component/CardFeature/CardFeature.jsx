@@ -14,7 +14,7 @@ const CardFeature = () => {
                 <div>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-20">
                         {/* first card */}
-                        <div className="card w-96  shadow-xl">
+                        <div className="card w-full  shadow-xl">
                             <figure><img className="h-[200px] transition duration-300 ease-in-out hover:scale-110 " src={feature1} alt="Shoes" /></figure>
                             <div className="card-body flex-1" data-aos="zoom-in">
                                 <h2 className="card-title text-3xl font-bold">Own Study Universe</h2>
@@ -22,7 +22,7 @@ const CardFeature = () => {
                             </div>
                         </div>
                          {/* 2nd card */}
-                         <div className="card w-96  shadow-xl">
+                         <div className="card w-full  shadow-xl">
                             <figure><img className="h-[200px] transition duration-300 ease-in-out hover:scale-110 " src={feature2} alt="Shoes" /></figure>
                             <div className="card-body flex-1" data-aos="zoom-in">
                                 <h2 className="card-title text-3xl font-bold">Group Study Rooms</h2>
@@ -30,7 +30,7 @@ const CardFeature = () => {
                             </div>
                         </div>
                          {/* 3rd card */}
-                         <div className="card w-96  shadow-xl">
+                         <div className="card w-full  shadow-xl">
                             <figure><img className="h-[200px] transition duration-300 ease-in-out hover:scale-110 " src={feature3} alt="Shoes" /></figure>
                             <div className="card-body flex-1" data-aos="zoom-in">
                                 <h2 className="card-title text-3xl font-bold">Free Tutor Help!</h2>
@@ -38,7 +38,7 @@ const CardFeature = () => {
                             </div>
                         </div>
                          {/* 4th card */}
-                         <div className="card w-96  shadow-xl">
+                         <div className="card w-full  shadow-xl">
                             <figure><img className="h-[200px] transition duration-300 ease-in-out hover:scale-110 " src={feature6} alt="Shoes" /></figure>
                             <div className="card-body flex-1" data-aos="zoom-in">
                                 <h2 className="card-title text-3xl font-bold">Mindfulness</h2>
@@ -46,7 +46,7 @@ const CardFeature = () => {
                             </div>
                         </div>
                          {/* 5th card */}
-                         <div className="card w-96  shadow-xl">
+                         <div className="card w-full  shadow-xl">
                             <figure><img className="h-[200px] transition duration-300 ease-in-out hover:scale-110 " src={feature4} alt="Shoes" /></figure>
                             <div className="card-body flex-1" data-aos="zoom-in">
                                 <h2 className="card-title text-3xl font-bold">Own Study Universe</h2>
@@ -54,7 +54,7 @@ const CardFeature = () => {
                             </div>
                         </div>
                          {/* 7th card */}
-                         <div className="card w-96  shadow-xl">
+                         <div className="card w-full  shadow-xl">
                             <figure><img className="h-[200px] transition duration-300 ease-in-out hover:scale-110 " src={feature5} alt="Shoes" /></figure>
                             <div className="card-body flex-1" data-aos="zoom-in">
                                 <h2 className="card-title text-3xl font-bold">Study Stats</h2>

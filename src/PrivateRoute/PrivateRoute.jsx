@@ -10,7 +10,7 @@ const PrivateRoute = ({children}) => {
     }
 
     if (!loading && !user?.email){
-     return <Navigate to='/login'></Navigate>
+     return <Navigate to='/login' replace></Navigate>
     
     }
      
