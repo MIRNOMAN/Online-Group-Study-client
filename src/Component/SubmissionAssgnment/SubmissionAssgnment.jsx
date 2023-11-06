@@ -1,9 +1,12 @@
 import Swal from "sweetalert2";
 import useAuth from "../../hooks/useAuth";
+import { useLoaderData } from "react-router-dom";
 
 
 
 const SubmissionAssgnment = () => {
+ const {title,level,marks,photo } = useLoaderData();
+ console.log(title, level, marks, photo)
     const {user} = useAuth();
  
     const handleSubmitAssignment = (e) => {
@@ -12,10 +15,11 @@ const SubmissionAssgnment = () => {
       const link = form.link.value;
       const message = form.message.value;
       const email = user.email;
+      const name = user.displayName;
       const status = 'pending';
     
 
-      const submitted = {link, message,email,status }
+      const submitted = {link,name, message,email,status ,title,level,marks,photo}
       
         fetch('http://localhost:5000/submittedAssignment', {
             method: 'POST',

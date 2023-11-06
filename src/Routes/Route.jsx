@@ -10,6 +10,8 @@ import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import UpdateAssignment from "../Component/UpdateAssignment/UpdateAssignment";
 import AssignmentDetails from "../Pages/AssignmentDetails/AssignmentDetails";
 import SubmissionAssgnment from "../Component/SubmissionAssgnment/SubmissionAssgnment";
+import SubmittedAssignment from "../Pages/SubmittedAssignment/SubmittedAssignment";
+import GiveMark from "../Component/GIveMark/GiveMark";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +45,16 @@ const router = createBrowserRouter([
       {
         path: "/submission/:_id",
         element: <PrivateRoute><SubmissionAssgnment></SubmissionAssgnment></PrivateRoute>,
+        loader: ({ params }) => fetch(`http://localhost:5000/details/${params._id}`)
+      },
+      {
+        path: "/submitted",
+        element: <PrivateRoute><SubmittedAssignment></SubmittedAssignment></PrivateRoute>,
+      },
+      {
+        path: "/giveMark/:_id",
+        element: <PrivateRoute><GiveMark></GiveMark></PrivateRoute>,
+        loader: ({ params }) => fetch(`http://localhost:5000/submittedAssignment/${params._id}`)
       }
     ]
   },
