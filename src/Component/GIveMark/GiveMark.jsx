@@ -16,7 +16,7 @@ const GiveMark = () => {
         
         const totalluser = {link,name, message,email,status,giveMark,feedback,title,level,marks,photo};
          
-        fetch('http://localhost:5000/submittedAssignment', {
+        fetch('http://localhost:5000/submittedAssignment',{
             method: 'PATCH',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify(totalluser)

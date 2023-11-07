@@ -12,6 +12,8 @@ import AssignmentDetails from "../Pages/AssignmentDetails/AssignmentDetails";
 import SubmissionAssgnment from "../Component/SubmissionAssgnment/SubmissionAssgnment";
 import SubmittedAssignment from "../Pages/SubmittedAssignment/SubmittedAssignment";
 import GiveMark from "../Component/GIveMark/GiveMark";
+import MySubmit from "../Pages/MySybmit/MySubmit";
+
 
 const router = createBrowserRouter([
   {
@@ -55,6 +57,10 @@ const router = createBrowserRouter([
         path: "/giveMark/:_id",
         element: <PrivateRoute><GiveMark></GiveMark></PrivateRoute>,
         loader: ({ params }) => fetch(`http://localhost:5000/submittedAssignment/${params._id}`)
+      },
+      {
+        path: '/myAsgmt',
+        element: <PrivateRoute><MySubmit></MySubmit></PrivateRoute>
       }
     ]
   },
