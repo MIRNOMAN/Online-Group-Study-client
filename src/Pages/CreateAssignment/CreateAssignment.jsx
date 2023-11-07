@@ -3,8 +3,10 @@ import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 import Swal from "sweetalert2";
+import useAuth from "../../hooks/useAuth";
 
 const CreateAssignment = () => {
+    const {user} = useAuth();
     const [startDate, setStartDate] = useState(new Date());
     const handleAssignmentAddButton = (e) => {
         e.preventDefault();
@@ -15,8 +17,9 @@ const CreateAssignment = () => {
       const date = form.date.value;
       const description = form.description.value;
       const photo = form.photo.value;
+      const email = user.email;
 
-      const newUser = { title, level, marks, date, description, photo }
+      const newUser = { title, level, marks, date, description, photo,email }
      console.log(newUser)
 
 
@@ -37,6 +40,7 @@ const CreateAssignment = () => {
                   icon: 'success',
                   confirmButtonText: 'Done'
                })
+            
             }
          })
     }

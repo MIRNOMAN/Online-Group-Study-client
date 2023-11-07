@@ -10,7 +10,7 @@ const SubmittedAssignment = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        axios.get('http://localhost:5000/submittedAssignment')
+        axios.get('http://localhost:5000/submittedAssignment',)
             .then((response) => {
                 setGetAssignment(response.data);
             })
@@ -27,7 +27,7 @@ const SubmittedAssignment = () => {
     return (
         <div>
 
-            {getAssignment.length > 0 ?
+            {getAssignment.length > 0  ?
 
                 <div className="overflow-x-auto">
                     <table className="table">

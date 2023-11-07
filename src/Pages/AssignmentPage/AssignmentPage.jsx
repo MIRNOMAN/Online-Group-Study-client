@@ -1,5 +1,5 @@
 import AssignmentCard from "./AssignmentCard";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, } from "@tanstack/react-query";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import { useState } from "react";
 
@@ -11,10 +11,11 @@ const categories = [
 
 
 const AssignmentPage = () => {
+   
     const [level, setLevels] = useState('')
     const [page, setPage] = useState(1)
     const axiosSecure = useAxiosSecure();
-
+    
     const limit = 5;
 
     const getServices = async () => {
@@ -30,6 +31,7 @@ const AssignmentPage = () => {
     } = useQuery({
         queryKey: ['service', level, page],
         queryFn: getServices,
+
     })
 
     const handlePrivious =() =>{
@@ -72,7 +74,7 @@ const AssignmentPage = () => {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {
-                  isLoading ? <p>Loading...</p> : allAssignments?.data?.result?.map(allAssignment => <AssignmentCard key={allAssignment._id} allAssignment={allAssignment}></AssignmentCard>)
+                  isLoading ? <p>Loading...</p> : allAssignments?.data?.result?.map(allAssignment => <AssignmentCard key={allAssignment._id}  allAssignment={allAssignment}></AssignmentCard>)
               }
           </div>
           <div className="mb-20 flex justify-center mt-20">

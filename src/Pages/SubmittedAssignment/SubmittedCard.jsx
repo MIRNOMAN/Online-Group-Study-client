@@ -11,7 +11,7 @@ const SubmittedCard = ({ getAssignment, setGetAssignment, cardValue }) => {
             <input type="checkbox" className="checkbox" />
           </label> */}
         </th>
-        <td>
+        <td className="w-[220px]">
           <div className="flex items-center space-x-3">
             <div className="avatar">
               <div className="mask mask-squircle w-12 h-12">
@@ -36,7 +36,9 @@ const SubmittedCard = ({ getAssignment, setGetAssignment, cardValue }) => {
         </td>
         <td><button className="btn btn-sm bg-[#FEF2F2] text-red-500">pending</button></td>
         <th>
-          <Link to={`/giveMark/${_id}`}><button className="btn">Give mark</button></Link>
+          <Link to={`/giveMark/${_id}`}>
+            <button className="btn">Give mark</button>
+            </Link>
         </th>
       </tr>   
 

@@ -26,9 +26,9 @@ const UpdateAssignment = () => {
 
       const updateUser = { title, level, marks, date, description, photo }
      console.log(updateUser)
+     
 
-
-      fetch(`http://localhost:5000/updates/${_id}`, {
+      fetch(`http://localhost:5000/updates/${_id}`,  {
          method: 'PUT',
          headers: {
             'content-type': 'application/json'
