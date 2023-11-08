@@ -10,11 +10,11 @@ const SubmittedAssignment = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        axios.get('http://localhost:5000/submittedAssignment',)
+        axios.get(`http://localhost:5000/submittedAssignment?email=${user.email}`, {withCredentials: true})
             .then((response) => {
                 setGetAssignment(response.data);
             })
-    }, [])
+    }, [user])
 
     useEffect(() => {
         const validUser = getAssignment.filter(product => product.email === user.email)

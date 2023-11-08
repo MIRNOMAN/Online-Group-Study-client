@@ -5,7 +5,7 @@ const MySubmitCard = ({ value }) => {
     return (
         <div>
             <div className="card  card-side bg-base-100 shadow-xl">
-                <figure><img className="h-full w-[250px]" src={photo} alt="Movie" /></figure>
+                <figure><img className="h-full w-[500px]" src={photo} alt="Movie" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{title}</h2>
                     <h2 className="card-title">Assignment Marks : {marks}</h2>

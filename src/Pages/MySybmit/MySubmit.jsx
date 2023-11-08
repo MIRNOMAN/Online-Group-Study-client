@@ -11,10 +11,10 @@ const MySubmit = () => {
     const [myAsgmt, setMyAsgmt] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/mySubmittedAssignment')
+        axios.get(`http://localhost:5000/mySubmittedAssignment?email=${user?.email}` ,{withCredentials: true})
             .then(res => setValues(res.data))
 
-    }, [])
+    }, [user])
     useEffect(() => {
         const validUser = values.filter(item => item.email === user.email)
         setMyAsgmt(validUser)
