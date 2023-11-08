@@ -23,7 +23,7 @@ const MySubmit = () => {
     console.log(myAsgmt)
     return (
         values.length > 0 ? <div>
-            <div className="grid grid-cols-1 mt-12 mb-20 lg:grid-cols-1 gap-6 max-w-[1200px] mx-auto">
+            <div className="grid grid-cols-1  mt-12 mb-20 lg:grid-cols-1 gap-6 max-w-[1200px] mx-auto">
                 {
                     myAsgmt?.map(value => <MySubmitCard key={value._id} value={value}></MySubmitCard>)
                 }
