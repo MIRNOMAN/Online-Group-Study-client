@@ -21,7 +21,7 @@ const SubmissionAssgnment = () => {
 
       const submitted = {link,name, message,email,status ,title,level,marks,photo}
       
-        fetch('http://localhost:5000/submittedAssignment', {
+        fetch('https://online-group-study-server-iota.vercel.app/submittedAssignment', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

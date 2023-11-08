@@ -11,7 +11,7 @@ const MySubmit = () => {
     const [myAsgmt, setMyAsgmt] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/mySubmittedAssignment?email=${user?.email}` ,{withCredentials: true})
+        axios.get(`https://online-group-study-server-iota.vercel.app/mySubmittedAssignment?email=${user?.email}`)
             .then(res => setValues(res.data))
 
     }, [user])

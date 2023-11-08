@@ -13,21 +13,21 @@ import Lottie from "lottie-react";
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const { signIn, googleSignIn, user } = useAuth();
+    const { signIn, googleSignIn, } = useAuth();
     const location = useLocation();
     const navigate = useNavigate();
 
     const handleGoogle = async () => {
-        const toastId = toast.loading('Login in');
-
-        try {
-            await googleSignIn(email, password);
-            toast.success('Login successful', { id: toastId });
-            navigate('/')
-            navigate(location?.state ? location.state : '/');
-        } catch (err) {
-            toast.error(err.message, { id: toastId })
-        }
+        googleSignIn()
+    .then(result => {
+        console.log(result.user)
+        
+        navigate('/')
+     navigate(location?.state ? location.state : '/');
+    })
+    .catch(err => {
+        console.log(err)
+    })
 
     }
 

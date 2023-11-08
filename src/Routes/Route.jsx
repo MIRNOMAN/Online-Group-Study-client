@@ -28,7 +28,8 @@ const router = createBrowserRouter([
       {
         path: '/assignment',
         element: <AssignmentPage></AssignmentPage>,
-        loader: () => fetch('http://localhost:5000/assignments')
+        loader: () => fetch('https://online-group-study-server-iota.vercel.app/assignments')
+        
       },
       {
         path: '/createAsgmt',
@@ -37,17 +38,17 @@ const router = createBrowserRouter([
       {
         path: '/updates/:_id',
         element: <PrivateRoute><UpdateAssignment></UpdateAssignment></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/updates/${params._id}`)
+        loader: ({ params }) => fetch(`https://online-group-study-server-iota.vercel.app/updates/${params._id}`)
       },
       {
         path: "/details/:_id",
         element: <PrivateRoute><AssignmentDetails></AssignmentDetails></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/details/${params._id}`)
+        loader: ({ params }) => fetch(`https://online-group-study-server-iota.vercel.app/details/${params._id}`)
       },
       {
         path: "/submission/:_id",
         element: <PrivateRoute><SubmissionAssgnment></SubmissionAssgnment></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/details/${params._id}`)
+        loader: ({ params }) => fetch(`https://online-group-study-server-iota.vercel.app/details/${params._id}`)
       },
       {
         path: "/submitted",
@@ -56,7 +57,7 @@ const router = createBrowserRouter([
       {
         path: "/giveMark/:_id",
         element: <PrivateRoute><GiveMark></GiveMark></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/submittedAssignment/${params._id}`)
+        loader: ({ params }) => fetch(`https://online-group-study-server-iota.vercel.app/submittedAssignment/${params._id}`)
       },
       {
         path: '/myAsgmt',

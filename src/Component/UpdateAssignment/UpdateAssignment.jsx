@@ -28,7 +28,7 @@ const UpdateAssignment = () => {
      console.log(updateUser)
      
 
-      fetch(`http://localhost:5000/updates/${_id}`,  {
+      fetch(`https://online-group-study-server-iota.vercel.app/updates/${_id}`,  {
          method: 'PUT',
          headers: {
             'content-type': 'application/json'

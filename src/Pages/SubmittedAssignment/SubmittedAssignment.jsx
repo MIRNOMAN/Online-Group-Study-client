@@ -10,7 +10,7 @@ const SubmittedAssignment = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/submittedAssignment?email=${user.email}`, {withCredentials: true})
+        axios.get(`https://online-group-study-server-iota.vercel.app/submittedAssignment?email=${user.email}`)
             .then((response) => {
                 setGetAssignment(response.data);
             })

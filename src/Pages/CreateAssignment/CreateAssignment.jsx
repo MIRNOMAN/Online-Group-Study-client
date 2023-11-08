@@ -23,7 +23,7 @@ const CreateAssignment = () => {
      console.log(newUser)
 
 
-      fetch(`http://localhost:5000/assignments`,{
+      fetch(`https://online-group-study-server-iota.vercel.app/assignments`,{
          method: 'POST',
          headers: {
             'content-type': 'application/json'

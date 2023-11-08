@@ -13,7 +13,7 @@ const AssignmentCard = ({ allAssignment }) => {
 
     const {mutate} = useMutation({
         mutationFn: async (_id) =>{
-          axios.delete(`http://localhost:5000/assignments/${_id}?userEmail=${user.email}&productEmail=${email}`)
+          axios.delete(`https://online-group-study-server-iota.vercel.app/assignments/${_id}?userEmail=${user.email}&productEmail=${email}`)
           .then(res => {
             console.log(res.data);
             const value = res.data;
