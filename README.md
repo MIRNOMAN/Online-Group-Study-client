@@ -1,8 +1,16 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+# Online Group Study 5 feature:
+
+* User profiles with authentication through usernames and passwords, or social media accounts to ensure that only authorized users can access the platform.
+
+* users to create assignment  and manage to personal  assignment submissions
+
+* An assignment submitted specific user submit assignment bydefault pending assignment submitted page.
+
+* submitted assignment page press given marks button and get marks and feedback submit and assignment completed successfully.
+
+* user submit assignment and status complete successfully and login and register authenticated.
